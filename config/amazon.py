@@ -1,0 +1,2 @@
+PRODUCT="keyboard"
+TEXT="SONUÇLAR"
