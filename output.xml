@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220813 12:37:26.825" rpa="false" schemaversion="3">
+<suite id="s1" name="Deneme" source="C:\Users\tolga\PycharmProjects\sigotamNetAmazonOdev\tests\deneme.robot">
+<test id="s1-t1" name="kontrol" line="17">
+<kw name="create session" library="utilsApp" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220813 12:37:27.827" endtime="20220813 12:37:27.827"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220813 12:37:27.828" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.tr/'.</msg>
+<status status="PASS" starttime="20220813 12:37:27.827" endtime="20220813 12:37:32.588"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220813 12:37:32.589" endtime="20220813 12:37:33.239"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:27.826" endtime="20220813 12:37:33.240"/>
+</kw>
+<kw name="gotosing" library="homePageApp">
+<kw name="go" library="homePage">
+<kw name="click" library="utils">
+<arg>${cookie}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220813 12:37:33.245" endtime="20220813 12:37:33.784"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220813 12:37:33.786" level="INFO">Clicking element 'id=sp-cc-accept'.</msg>
+<status status="PASS" starttime="20220813 12:37:33.785" endtime="20220813 12:37:34.951"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:33.244" endtime="20220813 12:37:34.951"/>
+</kw>
+<kw name="elementNotVisiable" library="utils">
+<arg>${cookie}</arg>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220813 12:37:34.952" endtime="20220813 12:37:35.463"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:34.951" endtime="20220813 12:37:35.463"/>
+</kw>
+<kw name="isEnable" library="utils">
+<arg>${mainNav}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220813 12:37:35.464" endtime="20220813 12:37:37.006"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:35.463" endtime="20220813 12:37:37.006"/>
+</kw>
+<kw name="click" library="utils">
+<arg>${singInButton}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220813 12:37:37.007" endtime="20220813 12:37:37.521"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220813 12:37:37.521" level="INFO">Clicking element 'id=nav-link-accountList'.</msg>
+<status status="PASS" starttime="20220813 12:37:37.521" endtime="20220813 12:37:39.390"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:37.006" endtime="20220813 12:37:39.390"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:33.243" endtime="20220813 12:37:39.390"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:33.241" endtime="20220813 12:37:39.390"/>
+</kw>
+<kw name="enter user" library="singInPageApp">
+<kw name="input account" library="singInPage">
+<kw name="click" library="utils">
+<arg>${emailText}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220813 12:37:39.392" endtime="20220813 12:37:40.130"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220813 12:37:40.130" level="INFO">Clicking element 'id=ap_email'.</msg>
+<status status="PASS" starttime="20220813 12:37:40.130" endtime="20220813 12:37:41.190"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:39.392" endtime="20220813 12:37:41.191"/>
+</kw>
+<kw name="isEnable" library="utils">
+<arg>${createAmazonAccount}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220813 12:37:41.196" endtime="20220813 12:37:42.833"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:41.192" endtime="20220813 12:37:42.834"/>
+</kw>
+<kw name="elementVisiable" library="utils">
+<arg>${amazonLogo}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220813 12:37:42.836" endtime="20220813 12:37:43.918"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:42.834" endtime="20220813 12:37:43.919"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${emailText}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220813 12:37:43.921" level="INFO">Typing text 'ujr08169@jeoce.com' into text field 'id=ap_email'.</msg>
+<status status="PASS" starttime="20220813 12:37:43.919" endtime="20220813 12:37:45.641"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:39.391" endtime="20220813 12:37:45.642"/>
+</kw>
+<kw name="click go on" library="singInPage">
+<kw name="isEnable" library="utils">
+<arg>${continue}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220813 12:37:45.645" endtime="20220813 12:37:47.211"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:45.643" endtime="20220813 12:37:47.211"/>
+</kw>
+<kw name="click" library="utils">
+<arg>${continue}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220813 12:37:47.212" endtime="20220813 12:37:47.723"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220813 12:37:47.724" level="INFO">Clicking element 'id=continue'.</msg>
+<status status="PASS" starttime="20220813 12:37:47.723" endtime="20220813 12:37:49.418"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:47.211" endtime="20220813 12:37:49.418"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:45.642" endtime="20220813 12:37:49.418"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:39.391" endtime="20220813 12:37:49.419"/>
+</kw>
+<kw name="enter password" library="singInPagePassApp">
+<kw name="login pass" library="singInPagePass">
+<kw name="elementVisiable" library="utils">
+<arg>${details}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220813 12:37:49.421" endtime="20220813 12:37:50.487"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:49.421" endtime="20220813 12:37:50.487"/>
+</kw>
+<kw name="click" library="utils">
+<arg>${submit}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220813 12:37:50.488" endtime="20220813 12:37:51.014"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220813 12:37:51.015" level="INFO">Clicking element 'id=signInSubmit'.</msg>
+<status status="PASS" starttime="20220813 12:37:51.014" endtime="20220813 12:37:52.164"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:50.487" endtime="20220813 12:37:52.164"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${passText}</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220813 12:37:52.165" level="INFO">Typing text 'F?!UagY3L_nx5Dn' into text field 'id=ap_password'.</msg>
+<status status="PASS" starttime="20220813 12:37:52.165" endtime="20220813 12:37:53.801"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:49.420" endtime="20220813 12:37:53.801"/>
+</kw>
+<kw name="click go on" library="singInPagePass">
+<kw name="isEnable" library="utils">
+<arg>${submit}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220813 12:37:53.802" endtime="20220813 12:37:55.375"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:53.802" endtime="20220813 12:37:55.375"/>
+</kw>
+<kw name="click" library="utils">
+<arg>${submit}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220813 12:37:55.377" endtime="20220813 12:37:55.899"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220813 12:37:55.901" level="INFO">Clicking element 'id=signInSubmit'.</msg>
+<status status="PASS" starttime="20220813 12:37:55.900" endtime="20220813 12:37:56.978"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:55.377" endtime="20220813 12:37:56.978"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:53.801" endtime="20220813 12:37:56.978"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:49.420" endtime="20220813 12:37:56.978"/>
+</kw>
+<kw name="isHomePage" library="homePageApp">
+<kw name="isHomePage" library="homePage">
+<kw name="elementVisiable" library="utils">
+<arg>${checkHome}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220813 12:37:56.980" endtime="20220813 12:38:05.911"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:56.980" endtime="20220813 12:38:05.912"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:56.980" endtime="20220813 12:38:05.912"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:56.979" endtime="20220813 12:38:05.913"/>
+</kw>
+<kw name="searchItem" library="homePageApp">
+<kw name="searchItem" library="homePage">
+<kw name="click" library="utils">
+<arg>${search}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220813 12:38:05.919" endtime="20220813 12:38:06.452"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220813 12:38:06.454" level="INFO">Clicking element 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20220813 12:38:06.452" endtime="20220813 12:38:07.625"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:05.917" endtime="20220813 12:38:07.625"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${search}</arg>
+<arg>${PRODUCT}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220813 12:38:07.626" level="INFO">Typing text 'keyboard' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20220813 12:38:07.625" endtime="20220813 12:38:09.293"/>
+</kw>
+<kw name="click" library="utils">
+<arg>${searchButton}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220813 12:38:09.295" endtime="20220813 12:38:09.839"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220813 12:38:09.841" level="INFO">Clicking element 'id=nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20220813 12:38:09.840" endtime="20220813 12:38:14.307"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:09.294" endtime="20220813 12:38:14.307"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:05.916" endtime="20220813 12:38:14.307"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:05.914" endtime="20220813 12:38:14.307"/>
+</kw>
+<kw name="deneme" library="allProductPageApp">
+<kw name="isProductPage" library="allProductPage">
+<kw name="elementVisiable" library="utils">
+<arg>${cargoShiping}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220813 12:38:14.310" endtime="20220813 12:38:15.379"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:14.309" endtime="20220813 12:38:15.379"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:14.309" endtime="20220813 12:38:15.380"/>
+</kw>
+<kw name="choiceProduct" library="allProductPage">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>@{webElements}</var>
+<arg>${link}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20220813 12:38:15.921" level="INFO">@{webElements} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="b24a6161-1a72-43b0-8625-ee7cd506ed96")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (ses...</msg>
+<status status="PASS" starttime="20220813 12:38:15.382" endtime="20220813 12:38:15.921"/>
+</kw>
+<kw name="Log List" library="Collections">
+<arg>${webElements}</arg>
+<doc>Logs the length and contents of the ``list`` using given ``level``.</doc>
+<msg timestamp="20220813 12:38:15.922" level="INFO">List length is 60 and it contains following items:
+0: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="b24a6161-1a72-43b0-8625-ee7cd506ed96")&gt;
+1: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="e6c5f6bd-93ff-46c2-87c0-2e9b20b6a5f7")&gt;
+2: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="6c93091a-b96c-46d8-8c8a-e52428dfcfc8")&gt;
+3: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="44438ec7-d1fc-46d2-9119-ef1956dea970")&gt;
+4: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="1e32beed-b0a1-42e6-bf10-645c21063f4b")&gt;
+5: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="8d1da9f6-960e-4a2c-be1c-bf3b198618f8")&gt;
+6: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="ca4f9b1d-1c58-40d1-8adf-37b9201d4a3a")&gt;
+7: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="00a1954f-6660-4761-9f6f-d4312020cbe6")&gt;
+8: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="76a0d85a-4ed8-44d3-94be-c63c29fc0460")&gt;
+9: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="ff42d036-bb4b-4562-bd7f-9e978473e4ea")&gt;
+10: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="32463222-6c99-4798-b2e2-700568ccf7f3")&gt;
+11: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="87e080eb-d004-49a6-b01f-00b8e184942c")&gt;
+12: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="666458d5-148a-4888-a1eb-4491f62ac2a4")&gt;
+13: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="50885277-1f58-479d-8fe2-5d16798cd87c")&gt;
+14: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="289cf04d-25db-43a0-b163-d1295e58e714")&gt;
+15: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="49633c0c-c4d2-4817-817a-a78ab57ae653")&gt;
+16: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="6aa6ad62-4168-44c1-b0e9-d415990d5cd1")&gt;
+17: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="d660528d-4777-43d7-817d-3ebbea27286d")&gt;
+18: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="5f8e3e2f-ed34-4555-8bf6-f8efab342741")&gt;
+19: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="03ed8381-eda8-4568-ba9a-bb1ac695deef")&gt;
+20: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="43159190-da5a-4a3a-895f-628ff24c3f8e")&gt;
+21: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="ed1fa2e2-0c71-40e0-8fb8-4caa2f91c892")&gt;
+22: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="e8bbb1ef-7fd0-4a68-a834-d5af9d4c428a")&gt;
+23: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="c04d19e8-d89f-4f3c-bb6d-c80a063b3e5f")&gt;
+24: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="fb25f63b-583e-47da-9e7c-b60e82c442e1")&gt;
+25: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="1f81bc7b-5cd4-4738-b51b-c4bdb0dedb32")&gt;
+26: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="d11728d6-82da-428a-ab4c-98bdc2e6e32a")&gt;
+27: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="322258a8-c6e4-4a64-84cf-bf02c358d786")&gt;
+28: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="5d415524-05f5-40c9-ae2a-2ba2d3212367")&gt;
+29: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="44d881fb-d8a8-4d68-8064-c3179126b61b")&gt;
+30: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="b82a954a-624c-498e-aff1-78dea04e1b9e")&gt;
+31: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="428b29ed-4836-4ee8-a76a-1bc80404a2e3")&gt;
+32: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="f56af918-54ac-47f3-ada3-a1e0700a219a")&gt;
+33: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="626a6dd4-6e06-43a1-97eb-c13f45064132")&gt;
+34: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="beaabe0b-6470-4503-87e1-6d408ebfdc13")&gt;
+35: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="7f68f58f-1f17-44b5-8e66-ad61a8f7255c")&gt;
+36: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="0f34292c-2079-4e45-aa1f-8a8a2f4a030a")&gt;
+37: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="9f320409-ed6b-4ca1-abb7-e08c4e0ffbc3")&gt;
+38: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="fc813d68-57c9-4887-8465-97a487361235")&gt;
+39: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="8e7cef3f-afc2-4514-9b3b-5705f03c2b01")&gt;
+40: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="65164d20-f701-4703-a7ca-00d1f6c10eb2")&gt;
+41: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="7881c641-99b6-40e4-8c58-215ab3a9593f")&gt;
+42: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="a8b2801d-70a1-489d-a7b4-6961909e1e39")&gt;
+43: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="e479dbaf-cade-44f6-aa47-b2a3d7eb8aa7")&gt;
+44: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="8ccefaa0-0010-4feb-a816-8cb1392c2ca3")&gt;
+45: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="3516fe7e-6640-4023-9728-c076b47cf995")&gt;
+46: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="d130f8bf-a749-40f8-b846-ce3517e7f694")&gt;
+47: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="0f83c906-7ac6-4320-8625-175c75378014")&gt;
+48: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="20044ec8-4de8-4607-9383-516ee81b81f7")&gt;
+49: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="9ea5e065-ae7d-4c9f-8467-2968cf87d405")&gt;
+50: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="b972c05d-c6d8-4164-834c-b6b0aea39635")&gt;
+51: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="db499448-1841-400f-a48c-f6408b5bf544")&gt;
+52: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="0c4cbf36-28c5-4aa4-93e1-1a680b6e4328")&gt;
+53: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="84fe3434-646e-453d-812a-4a6329d310c2")&gt;
+54: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="4ecc7e97-a593-4a7e-8730-c14e5759fa35")&gt;
+55: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="87038b3e-50b4-4f71-b659-c218ec0d62b7")&gt;
+56: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="030ef884-aff6-445f-8050-0aeec0d180b1")&gt;
+57: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="fdf45af0-4804-4e6a-8235-db37a2b52a37")&gt;
+58: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="838e49b9-630e-492f-906c-ceb4cb32c4e3")&gt;
+59: &lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="b5a7177a-d6ef-4892-a2f1-783d87a87117")&gt;</msg>
+<status status="PASS" starttime="20220813 12:38:15.921" endtime="20220813 12:38:15.922"/>
+</kw>
+<kw name="click" library="utils">
+<arg>${webElements}[1]</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220813 12:38:15.923" endtime="20220813 12:38:15.924"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220813 12:38:15.924" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="3dff88c0a6a6b6fff90367b1eb1c68b2", element="e6c5f6bd-93ff-46c2-87c0-2e9b20b6a5f7")&gt;'.</msg>
+<status status="PASS" starttime="20220813 12:38:15.924" endtime="20220813 12:38:25.479"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:15.923" endtime="20220813 12:38:25.479"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:15.380" endtime="20220813 12:38:25.479"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:14.308" endtime="20220813 12:38:25.479"/>
+</kw>
+<kw name="go Basket" library="productPageApp">
+<kw name="isPrice" library="productPage">
+<kw name="elementVisiable" library="utils">
+<arg>${price}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220813 12:38:25.481" endtime="20220813 12:38:26.518"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:25.481" endtime="20220813 12:38:26.518"/>
+</kw>
+<kw name="isEnable" library="utils">
+<arg>${buyButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220813 12:38:26.519" endtime="20220813 12:38:28.090"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:26.518" endtime="20220813 12:38:28.091"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:25.480" endtime="20220813 12:38:28.091"/>
+</kw>
+<kw name="addBasket" library="productPage">
+<kw name="click" library="utils">
+<arg>${addBasketButton}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220813 12:38:28.096" endtime="20220813 12:38:28.619"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220813 12:38:28.621" level="INFO">Clicking element 'id=add-to-cart-button'.</msg>
+<status status="PASS" starttime="20220813 12:38:28.620" endtime="20220813 12:38:31.767"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:28.094" endtime="20220813 12:38:31.767"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:28.092" endtime="20220813 12:38:31.767"/>
+</kw>
+<kw name="goToBasket" library="productPage">
+<kw name="click" library="utils">
+<arg>${goBasktetButton}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220813 12:38:31.768" endtime="20220813 12:38:32.290"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220813 12:38:32.292" level="INFO">Clicking element 'id=sw-gtc'.</msg>
+<status status="PASS" starttime="20220813 12:38:32.291" endtime="20220813 12:38:35.147"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:31.768" endtime="20220813 12:38:35.147"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:31.768" endtime="20220813 12:38:35.147"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:25.480" endtime="20220813 12:38:35.147"/>
+</kw>
+<kw name="checkBasket" library="basketPageApp">
+<kw name="delete" library="basketPage">
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>${deneme}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220813 12:38:35.149" endtime="20220813 12:38:36.214"/>
+</kw>
+<kw name="Should Not Be Equal" library="BuiltIn">
+<arg>${priceBasketPage}</arg>
+<arg>${price}</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" starttime="20220813 12:38:36.215" endtime="20220813 12:38:36.216"/>
+</kw>
+<kw name="click" library="utils">
+<arg>${deleteButton}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220813 12:38:36.217" endtime="20220813 12:38:36.756"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220813 12:38:36.758" level="INFO">Clicking element 'css=.a-declarative &gt; input[ value='Sil' ]'.</msg>
+<status status="PASS" starttime="20220813 12:38:36.757" endtime="20220813 12:38:37.942"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:36.216" endtime="20220813 12:38:37.942"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:35.149" endtime="20220813 12:38:37.942"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:35.148" endtime="20220813 12:38:37.942"/>
+</kw>
+<kw name="close session" library="utilsApp" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220813 12:38:37.943" endtime="20220813 12:38:40.592"/>
+</kw>
+<status status="PASS" starttime="20220813 12:38:37.943" endtime="20220813 12:38:40.592"/>
+</kw>
+<status status="PASS" starttime="20220813 12:37:27.825" endtime="20220813 12:38:40.593"/>
+</test>
+<status status="PASS" starttime="20220813 12:37:26.827" endtime="20220813 12:38:40.598"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Deneme">Deneme</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
